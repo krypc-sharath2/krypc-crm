@@ -1,5 +1,4 @@
 import { Authenticated, Refine } from "@refinedev/core";
-import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 
 import {
@@ -24,18 +23,23 @@ import {
   CompaniesList,
   CompaniesShow
 } from "pages/companies";
+
 import {
-  BlogPostCreate,
-  BlogPostEdit,
-  BlogPostList,
-  BlogPostShow,
-} from "pages/blog-posts";
+  PillarCreate,
+  PillarEdit,
+  PillarShow,
+  PillarList
+} from "pages/pillars";
+
 import {
-  CategoryCreate,
-  CategoryEdit,
-  CategoryList,
-  CategoryShow,
-} from "pages/categories";
+  MarketResearchCreate,
+  MarketResearchEdit,
+  MarketResearchShow,
+  MarketResearchList
+} from "pages/marketResearch";
+
+
+
 import { ForgotPassword } from "pages/forgotPassword";
 import { Login } from "pages/login";
 import { Register } from "pages/register";
@@ -80,11 +84,11 @@ function App() {
                     },
                   },
                   {
-                    name: "blog_posts",
-                    list: "/blog-posts",
-                    create: "/blog-posts/create",
-                    edit: "/blog-posts/edit/:id",
-                    show: "/blog-posts/show/:id",
+                    name: "pillars",
+                    list: "/pillars",
+                    create: "/pillars/create",
+                    edit: "/pillars/edit/:id",
+                    show: "/pillars/show/:id",
                     meta: {
                       canDelete: true,
                     },
@@ -133,22 +137,16 @@ function App() {
                       <Route path="show/:id" element={<CompaniesShow />} />
                     </Route>
                     <Route path="/marketResearch">
-                      <Route index element={<BlogPostList />} />
-                      <Route path="create" element={<BlogPostCreate />} />
-                      <Route path="edit/:id" element={<BlogPostEdit />} />
-                      <Route path="show/:id" element={<BlogPostShow />} />
+                      <Route index element={<MarketResearchList />} />
+                      <Route path="create" element={<MarketResearchCreate />} />
+                      <Route path="edit/:id" element={<MarketResearchEdit />} />
+                      <Route path="show/:id" element={<MarketResearchShow />} />
                     </Route>
-                    <Route path="/blog-posts">
-                      <Route index element={<BlogPostList />} />
-                      <Route path="create" element={<BlogPostCreate />} />
-                      <Route path="edit/:id" element={<BlogPostEdit />} />
-                      <Route path="show/:id" element={<BlogPostShow />} />
-                    </Route>
-                    <Route path="/categories">
-                      <Route index element={<CategoryList />} />
-                      <Route path="create" element={<CategoryCreate />} />
-                      <Route path="edit/:id" element={<CategoryEdit />} />
-                      <Route path="show/:id" element={<CategoryShow />} />
+                    <Route path="/pillar">
+                      <Route index element={<PillarList />} />
+                      <Route path="create" element={<PillarCreate />} />
+                      <Route path="edit/:id" element={<PillarEdit />} />
+                      <Route path="show/:id" element={<PillarShow />} />
                     </Route>
                     <Route path="*" element={<ErrorComponent />} />
                   </Route>
