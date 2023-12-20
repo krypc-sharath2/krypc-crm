@@ -142,7 +142,7 @@ function App() {
                       <Route path="edit/:id" element={<MarketResearchEdit />} />
                       <Route path="show/:id" element={<MarketResearchShow />} />
                     </Route>
-                    <Route path="/pillar">
+                    <Route path="/pillars">
                       <Route index element={<PillarList />} />
                       <Route path="create" element={<PillarCreate />} />
                       <Route path="edit/:id" element={<PillarEdit />} />

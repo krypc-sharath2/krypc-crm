@@ -15,6 +15,27 @@ export const PillarList: React.FC<IResourceComponentsProps> = () => {
     const columns = React.useMemo<GridColDef[]>(
         () => [
             {
+                field: "account_name",
+                headerName: "account_name",
+                sortable: false,
+                align: "center",
+                headerAlign: "center",
+            },
+            {
+                field: "industry",
+                headerName: "industry",
+                sortable: false,
+                align: "center",
+                headerAlign: "center",
+            },
+            {
+                field: "industry_vertical",
+                headerName: "industry_vertical",
+                sortable: false,
+                align: "center",
+                headerAlign: "center",
+            },
+            {
                 field: "actions",
                 headerName: "Actions",
                 sortable: false,
