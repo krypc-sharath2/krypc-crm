@@ -124,7 +124,7 @@ export const CompaniesCreate: React.FC<IResourceComponentsProps> = () => {
 
                     Docs: https://mui.com/x/react-date-pickers/date-picker/#basic-usage
                 */}
-          <TextField
+          {/*<TextField
               {...register("createdAt", {
                 required: "This field is required",
               })}
@@ -135,7 +135,7 @@ export const CompaniesCreate: React.FC<IResourceComponentsProps> = () => {
               InputLabelProps={{ shrink: true }}
               label="Created At"
               name="createdAt"
-          />
+          />*/}
 
           {/*
                     DatePicker component is not included in "@refinedev/mui" package.
@@ -143,7 +143,7 @@ export const CompaniesCreate: React.FC<IResourceComponentsProps> = () => {
 
                     Docs: https://mui.com/x/react-date-pickers/date-picker/#basic-usage
                 */}
-          <TextField
+          {/*<TextField
               {...register("updatedAt", {
                 required: "This field is required",
               })}
@@ -154,8 +154,8 @@ export const CompaniesCreate: React.FC<IResourceComponentsProps> = () => {
               InputLabelProps={{ shrink: true }}
               label="Updated At"
               name="updatedAt"
-          />
-          <TextField
+          />*/}
+          {/*<TextField
               {...register("__v", {
                 required: "This field is required",
                 valueAsNumber: true,
@@ -168,7 +168,7 @@ export const CompaniesCreate: React.FC<IResourceComponentsProps> = () => {
               type="number"
               label="  V"
               name="__v"
-          />
+          />*/}
         </Box>
       </Create>
   );

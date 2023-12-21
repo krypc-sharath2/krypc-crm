@@ -68,12 +68,11 @@ function App() {
                     create: "/companies/create",
                     edit: "/companies/edit/:id",
                     show: "/companies/show/:id",
-                    
                     meta: {
                       canDelete: true,
                     },
                   },
-                  {
+                  /*{
                     name: "marketResearch",
                     list: "/marketResearch",
                     create: "/marketResearch/create",
@@ -82,7 +81,7 @@ function App() {
                     meta: {
                       canDelete: true,
                     },
-                  },
+                  },*/
                   {
                     name: "pillars",
                     list: "/pillars",
@@ -93,7 +92,7 @@ function App() {
                       canDelete: true,
                     },
                   },
-                  {
+                  /*{
                     name: "categories",
                     list: "/categories",
                     create: "/categories/create",
@@ -102,7 +101,7 @@ function App() {
                     meta: {
                       canDelete: true,
                     },
-                  },
+                  },*/
                 ]}
                 options={{
                   syncWithLocation: true,
