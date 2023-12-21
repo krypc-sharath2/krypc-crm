@@ -78,7 +78,7 @@ export const CompaniesList: React.FC<IResourceComponentsProps> = () => {
     );
 
     return (
-        <List>
+        <List canCreate={true}>
             <DataGrid {...dataGridProps} columns={columns} autoHeight />
         </List>
     );

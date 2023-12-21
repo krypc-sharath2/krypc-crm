@@ -65,7 +65,7 @@ function App() {
                   {
                     name: "companies",
                     list: "/companies",
-                    create: "/companies",
+                    create: "/companies/create",
                     edit: "/companies/edit/:id",
                     show: "/companies/show/:id",
                     
@@ -76,7 +76,7 @@ function App() {
                   {
                     name: "marketResearch",
                     list: "/marketResearch",
-                    create: "/marketResearch",
+                    create: "/marketResearch/create",
                     edit: "/marketResearch/edit/:id",
                     show: "/marketResearch/show/:id",
                     meta: {
