@@ -16,13 +16,13 @@ export const PillarList: React.FC<IResourceComponentsProps> = () => {
         () => [
             {
                 field: "account_name",
-                headerName: "account_name",
+                headerName: "Account Name",
                 sortable: false,
                 align: "center",
                 headerAlign: "center",
             },
             {
-                field: "dApps",
+                field: "web3-dApps",
                 headerName: "dApps",
                 sortable: false,
                 align: "center",
@@ -30,7 +30,7 @@ export const PillarList: React.FC<IResourceComponentsProps> = () => {
                 headerClassName :'child-header'
             },
             {
-                field: "SmartContract Automation",
+                field: "web3-SmartContract",
                 headerName: "SmartContract Automation",
                 sortable: false,
                 align: "center",
@@ -38,7 +38,7 @@ export const PillarList: React.FC<IResourceComponentsProps> = () => {
                 headerClassName :'child-header'
             },
             {
-                field: "NFTs",
+                field: "web3-NFTs",
                 headerName: "NFTs",
                 sortable: false,
                 align: "center",
@@ -121,10 +121,11 @@ export const PillarList: React.FC<IResourceComponentsProps> = () => {
             <DataGrid   experimentalFeatures={{ columnGrouping: true }}
                         {...dataGridProps} columns={columns} columnGroupingModel={[
                 {
-                    groupId: 'Web3',
+                    groupId: 'web3',
+                    headerName:"web3",
                     headerAlign: "center",
                     headerClassName: 'my-group-header',
-                    children: [{ field: 'dApps' },{ field: 'SmartContract Automation' },{ field: 'NFTs' }],
+                    children: [{ field: 'web3-dApps' },{ field: 'web3-SmartContract' },{ field: 'web3-NFTs' }],
                 },
                 {
                     groupId: 'HLF',
